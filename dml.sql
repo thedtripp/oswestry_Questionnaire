@@ -6,18 +6,18 @@ VALUES
         10
     );
 
-INSERT INTO Questions (question_text, questionnaire_id)
+INSERT INTO Questions (question_text, questionnaire_id, question_order_rank)
 VALUES 
-    ('Section 1 – Pain intensity ', 1),
-    ('Section 2 – Personal care (washing, dressing etc) ', 1),
-    ('Section 3 – Lifting ', 1),
-    ('Section 4 – Walking* ', 1),
-    ('Section 5 – Sitting ', 1),
-    ('Section 6 – Standing ', 1),
-    ('Section 7 – Sleeping ', 1),
-    ('Section 8 – Sex life (if applicable) ', 1),
-    ('Section 9 – Social life', 1),
-    ('Section 10 – Travelling', 1);
+    ('Section 1 – Pain intensity ', 1, 1),
+    ('Section 2 – Personal care (washing, dressing etc) ', 1, 2),
+    ('Section 3 – Lifting ', 1, 3),
+    ('Section 4 – Walking* ', 1, 4),
+    ('Section 5 – Sitting ', 1, 5),
+    ('Section 6 – Standing ', 1, 6),
+    ('Section 7 – Sleeping ', 1, 7),
+    ('Section 8 – Sex life (if applicable) ', 1, 8),
+    ('Section 9 – Social life', 1, 9),
+    ('Section 10 – Travelling', 1, 10);
 
 INSERT INTO Answer_choices (question_id, answer_text, point_value)
 VALUES
